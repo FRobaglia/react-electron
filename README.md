@@ -6,18 +6,21 @@ This is a base repository to start an app with React and Electron
 
 run `npm install`, then :
 
-#### `npm run start`
 
-Run the app in development mode on [localhost:3000](http://localhost:3000/)
+#### `npm run dev`
 
-#### `npm run electron`
+Run React on [localhost:5000](http://localhost:3000/) and Electron. Basic dev command.
 
-Run electron. Electron is linked to [localhost:3000](http://localhost:3000/), so command `npm run start` must be running.
+#### `npm run start-react`
 
+Run React only [localhost:3000](http://localhost:3000/)
 
 #### `npm run build`
 
-Builds the app.
-Create a minified bundle named build in root.
+Builds the React app.
+Create a `build` folder in root.
 
-For Mac users : in `package.json`, change `electron-dev` script as follow : `"electron-dev": "ELECTRON_START_URL=http://localhost:3000 electron ."`
+#### `npm run electron`
+
+Run electron without React. Electron will look for index.html in the build folder.
+

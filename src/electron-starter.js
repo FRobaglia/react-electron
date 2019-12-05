@@ -13,8 +13,14 @@ function createWindow () {
     height: 600
   })
 
-  // and load the index.html of the app.
-  mainWindow.loadURL('http://localhost:3000')
+  // if there is an env variable called ELECTRON_START_URL (it's initied when executing npm script electron-dev), load Electron thhrough this URL (dev). Else, load electron through the build folder.
+  const startURL = process.env.ELECTRON_START_URL || url.format({
+      pathname: path.join(__dirname, '/../build/index.html'),
+      protocol: 'file:',
+      slashes: true
+  });
+
+  mainWindow.loadURL(startURL)
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()

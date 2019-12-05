@@ -10,13 +10,14 @@
   },
   "main": "src/electron-starter.js",
   "scripts": {
-    "start": "react-scripts start",
+    "start-react": "react-scripts start",
+    "dev": "nf start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron": "electron .",
-    "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron ."
+    "electron": "electron ."
   },
+  "homepage": "./",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -33,6 +34,7 @@
     ]
   },
   "devDependencies": {
-    "electron": "^7.1.3"
+    "electron": "^7.1.3",
+    "foreman": "^3.0.1"
   }
 }
