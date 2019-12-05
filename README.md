@@ -18,4 +18,6 @@ Run electron. Electron is linked to [http://localhost:3000/], so command `npm ru
 ### `npm run build`
 
 Builds the app.
-Create a minified bundle named build in root.^
+Create a minified bundle named build in root.
+
+
