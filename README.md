@@ -13,7 +13,7 @@ Run React on [localhost:5000](http://localhost:3000/) and Electron. Basic dev co
 
 #### `npm run start-react`
 
-Run React only [localhost:3000](http://localhost:3000/)
+Run React only on [localhost:3000](http://localhost:3000/)
 
 #### `npm run build`
 
